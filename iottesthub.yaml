@@ -12,3 +12,5 @@ spec:
       image: sravangdocker/testhub:dev
       imagePullPolicy: Always
       name: testhub
+  imagePullSecrets:
+    - name: myregistrykey

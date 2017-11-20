@@ -9,7 +9,7 @@ spec:
       command: 
         - echo
         - SUCCESS
-      image: "index.docker.io/sravangdocker/testhub:dev"
+      image: sravangdocker/testhub:dev
       imagePullPolicy: Always
       name: testhub
   imagePullSecrets: 

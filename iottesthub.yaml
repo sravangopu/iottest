@@ -2,15 +2,15 @@
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: testhub
+  name: iottest
 spec: 
   containers: 
     - 
       command: 
         - echo
         - SUCCESS
-      image: sravangdocker/testhub:dev
+      image: sravangdocker/iottest:winserver
       imagePullPolicy: Always
-      name: testhub
+      name: iottest
   imagePullSecrets:
     - name: myregistrykey

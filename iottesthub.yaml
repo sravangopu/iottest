@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: testhub
+spec:
+  containers:
+    - name: testhub
+      image: index.docker.io/sravangdocker/testhub:dev
+      imagePullPolicy: Always
+      command: [ "echo", "SUCCESS" ]
+  imagePullSecrets:
+    - name: myregistrykey
